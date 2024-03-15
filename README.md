@@ -24,6 +24,48 @@ If you logout, you cannot access all the services.
 - Express.js
 - MySQL & Prisma
 
+## Table Relation
+
+``` Admin table ```
+
+| Name | Type | Key |
+|----------|----------|----------|
+| username | varchar(100) | id |
+| password | varchar(100) |  |
+| email | varchar(100) |  |
+
+``` User table ```
+
+| Name | Type | Key |
+|----------|----------|----------|
+| user_id | varchar(100) | id(autoincrement) |
+| owner | varchar(100) | unique |
+| phone | varchar(100) |  |
+| address | varchar(100) |  |
+
+``` Animal table ```
+
+| Name | Type | Key |
+|----------|----------|----------|
+| animal_id | varchar(100) | id(autoincrement) |
+| name | varchar(100) | |
+| age | varchar(10) |  |
+| color | varchar(10) |  |
+| kind | varchar(10) |  |
+| user_id | Int | FK -> User |
+
+``` Grooming table ```
+
+| Name | Type | Key |
+|----------|----------|----------|
+| id | varchar(100) | id(autoincrement) |
+| owner | varchar(100) | unique |
+| name | varchar(100) |  |
+| groomingType | varchar(100) |  |
+| date | varchar(100) |  |
+| queue | int | |
+| user_id | int | FK -> User |
+
 ## Getting Started
 
 1. Clone the repository:
