@@ -38,7 +38,7 @@ If you logout, you cannot access all the services.
 
 | Name | Type | Key |
 |----------|----------|----------|
-| user_id | varchar(100) | id(autoincrement) |
+| user_id | int | id(autoincrement) |
 | owner | varchar(100) | unique |
 | phone | varchar(100) |  |
 | address | varchar(100) |  |
@@ -47,7 +47,7 @@ If you logout, you cannot access all the services.
 
 | Name | Type | Key |
 |----------|----------|----------|
-| animal_id | varchar(100) | id(autoincrement) |
+| animal_id | int | id(autoincrement) |
 | name | varchar(100) | |
 | age | varchar(10) |  |
 | color | varchar(10) |  |
@@ -58,7 +58,7 @@ If you logout, you cannot access all the services.
 
 | Name | Type | Key |
 |----------|----------|----------|
-| id | varchar(100) | id(autoincrement) |
+| id | int | id(autoincrement) |
 | owner | varchar(100) | unique |
 | name | varchar(100) |  |
 | groomingType | varchar(100) |  |
